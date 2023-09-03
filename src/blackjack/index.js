@@ -1,6 +1,13 @@
 import _ from "underscore";
+//import individual
+import  {crearDeck }  from "./usecases/crear-deck";
+//import por defecto
+// import  crearDeck   from "./usecases/crear-deck";
+//import defecto e individual
+// import  crearDeck, {minombre}   from "./usecases/crear-deck";
 
-import "./style.css";
+// console.log(minombre);
+
 
 /**
  * 2C = Two of Clubs
@@ -26,26 +33,10 @@ const divCartasComputadora = document.querySelector("#computadora-cartas");
 
 const puntosHTML = document.querySelectorAll("small");
 
-// Esta función crea un nuevo deck
-const crearDeck = () => {
-  for (let i = 2; i <= 10; i++) {
-    for (let tipo of tipos) {
-      deck.push(i + tipo);
-    }
-  }
+//recibe el return de crear-Deck.js y la asigna a la variable deck para  funcionamiento
+deck =crearDeck(tipos, especiales);
+console.log(deck);
 
-  for (let tipo of tipos) {
-    for (let esp of especiales) {
-      deck.push(esp + tipo);
-    }
-  }
-  // console.log( deck );
-  deck = _.shuffle(deck);
-  console.log(deck);
-  return deck;
-};
-
-crearDeck();
 
 // Esta función me permite tomar una carta
 const pedirCarta = () => {
@@ -55,7 +46,7 @@ const pedirCarta = () => {
   const carta = deck.pop();
   return carta;
 };
-
+ 
 // pedirCarta();
 const valorCarta = (carta) => {
   const valor = carta.substring(0, carta.length - 1);
