@@ -7,6 +7,8 @@ import  {crearDeck }  from "./usecases/crear-deck";
 // import  crearDeck, {minombre}   from "./usecases/crear-deck";
 // console.log(minombre);
 import { pedirCarta } from "./usecases/pedir-carta";
+import { valorCarta } from "./usecases/valor-carta";
+
 
 
 
@@ -41,11 +43,8 @@ console.log(deck);
 
 
  
-// pedirCarta();
-const valorCarta = (carta) => {
-  const valor = carta.substring(0, carta.length - 1);
-  return isNaN(valor) ? (valor === "A" ? 11 : 10) : valor * 1;
-};
+
+
 
 // turno de la computadora
 const turnoComputadora = (puntosMinimos) => {
