@@ -1,13 +1,14 @@
 import _ from "underscore";
 //import individual
-import  {crearDeck }  from "./usecases/crear-deck";
+// import  {crearDeck }  from "./usecases/crear-deck";
 //import por defecto
 // import  crearDeck   from "./usecases/crear-deck";
 //import defecto e individual
 // import  crearDeck, {minombre}   from "./usecases/crear-deck";
 // console.log(minombre);
-import { pedirCarta } from "./usecases/pedir-carta";
-import { valorCarta } from "./usecases/valor-carta";
+// import { pedirCarta } from "./usecases/pedir-carta";
+// import { valorCarta } from "./usecases/valor-carta";
+import { crearDeck, pedirCarta, valorCarta } from "./usecases";
 
 
 

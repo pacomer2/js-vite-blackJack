@@ -1,7 +1,6 @@
 
 
-import { crearDeck } from "./usecases/crear-deck";
-
-import { pedirCarta } from "./usecases/pedir-carta";
-import { valorCarta } from "./usecases/valor-carta";
+export { crearDeck } from "./crear-deck";
+ export { pedirCarta } from "./pedir-carta";
+export { valorCarta } from "./valor-carta";
  
