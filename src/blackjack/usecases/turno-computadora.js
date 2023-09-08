@@ -16,7 +16,7 @@ import { pedirCarta, valorCarta, crearCartasHTML } from "../usecases";
    if (!puntosMinimos) throw new Error('Puntos Minimos son necesarios');
    if (!deck) throw new Error('El Deck falta');
    if (!puntosHTML) throw new Error('Argumentos HTML son necesarios');
-
+ 
    let puntosComputadora = 0;
   
 

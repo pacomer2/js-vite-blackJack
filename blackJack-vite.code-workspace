@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "blackJack-vite",
+		"path": "."
+	},
+	{
+		"name": "assets",
+		"path": "../js-blackjack-1.0.0/assets"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "blackJack-vite"
+  }
+}
